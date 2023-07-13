@@ -23,14 +23,14 @@ const Navbar = () => {
                     <li className={` ${styles.navlink} `}>
                             <Link to='/committee-members'>The Team</Link>
                     </li>
-                    <li className={` ${styles.navlink} `}>
+                    <li className={` ${styles.navlink} disabled `}>
                             <Link to='/about'>Programs</Link>
                     </li>
                     <li className={` ${styles.navlink} `}>
                             <Link to='/about'>Events</Link>
                     </li>
                     <li className={` ${styles.navlink} `}>
-                            <Link to='#'> Blogs </Link>
+                            <Link to='/news&blogs'> Blogs </Link>
                     </li>
                 
 

@@ -1,0 +1,41 @@
+.blogSection{
+    height: 50vh;
+    .title{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+
+    }
+
+    .heading{
+        font-family: 'DM Serif Display', serif;
+        font-size: 55px ;
+        line-height: 60px;
+    }
+}
+
+// 
+
+.newsCard{
+    .Img1{
+        width:500px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .Card{
+        h3{
+            font-family: 'DM Serif Display', serif;
+            font-size: 23px ;
+            line-height: 30px;
+        }
+
+        p{
+            font-family: 'Inter', sans-serif;
+            font-size: 15px ;
+            line-height: 25px;
+            background-color: red($color: #ff0000);
+        }
+
+    }
+}

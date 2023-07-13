@@ -5,3 +5,4 @@ export { default as MyForm }  from './form';
 export { default as Partners } from './partners';
 export { default as Accordion } from './accordion';
 export { default as Team } from './teams';
+export { default as News } from './news';

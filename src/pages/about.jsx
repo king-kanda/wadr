@@ -2,7 +2,7 @@ import React from 'react'
 import { Image } from 'cloudinary-react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Navbar, Team } from '../components'
+import { Footer, Navbar, News, Team } from '../components'
 import styles from '../styles/about.module.scss'
 
 
@@ -131,6 +131,9 @@ const About = () => {
             <div className="border-b border-dashed border-gray-5 my-8"></div>
           </div>
         </section>
+        <div className="news-section ">
+          <News/>
+        </div>
     </main>
     <Footer/>
     </>

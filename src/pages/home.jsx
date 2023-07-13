@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar, Partners , Accordion} from '../components'
+import { Footer, Navbar, Partners , Accordion, News} from '../components'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 
 import styles from '../styles/home.module.scss'
@@ -76,6 +76,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <News/>
         </main>
         <Footer/>
     </>

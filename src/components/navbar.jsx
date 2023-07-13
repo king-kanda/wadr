@@ -41,11 +41,11 @@ const Navbar = () => {
                 </div>
                 <div className="btn-class">
                     <div className="flex items-center justify-between">
-                        <Link to='/' className='px-2'> 
-                            <button className={`px-4 py-3 bg-white border border-2 border-purple text-purple`}>
-                                Join Us
-                            </button>
-                        </Link>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform">
+                                <button className={`px-4 py-3 bg-white border border-2 border-purple text-purple`}>
+                                    Join Us
+                                </button>
+                        </a>
                         <Link to='/contact'  className='px-2'> 
                             <button className={`px-4 py-3 bg-white border border-2 border-purple text-purple`}>
                                 Contact Us

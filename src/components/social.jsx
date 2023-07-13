@@ -17,11 +17,13 @@ const Social = () => {
                         </p>
                     </div>
                     <div className="text-center">
-                        <Link to='/contact'  className='px-2 '> 
+                       <a href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform">
                             <button className={` ${styles.join} px-8 py-4 bg-yellow text-white`}>
                                 Join The Membership
                             </button>
-                        </Link>
+                        </a> 
+                            
+                        
                     </div>
                 </div>
                 {/* buttons */}

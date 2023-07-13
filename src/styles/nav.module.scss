@@ -1,0 +1,47 @@
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+.navlink{
+    
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    // font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.leading{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.heading{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.join{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.icons1{
+    color: white;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
+
+    P{
+        font-weight: bold;
+    }
+
+    span.icon{
+        font-size: 1.2rem;
+    }
+
+}

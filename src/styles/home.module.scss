@@ -1,0 +1,139 @@
+.hero{
+    background: linear-gradient(360deg, rgba(85, 25, 109, 0.795) 50%, rgba(2, 2, 2, 0.192) 100%),
+     url('https://res.cloudinary.com/namiri/image/upload/v1689098217/Women_s_Day_Event_1_1_ignoof.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    // justify-content: end;
+    align-items: flex-end;
+
+    @media screen and (max-width: 468px) {
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .heroSub{
+        display: flex;
+        // justify-content: end;
+        align-items: flex-end;
+    }
+
+    .news{
+        height: 90vh;
+    }
+    
+}
+
+.title{
+    font-size: 50px;
+    line-height: 55px;
+    font-family: 'DM Serif Display', serif;
+}
+
+// about section
+
+.aboutSec{
+    .aboutTt{
+        h2{
+            font-family: 'DM Serif Display', serif;
+            font-size: 50px ;
+            line-height: 50px;
+            margin-top: 20px;
+        }
+    }
+
+    .aboutText{
+        p{
+            font-family: 'Inter', sans-serif;
+            font-size: 16px ;
+            margin-top: 15px;
+            
+        }
+    }
+}
+
+
+// logos sections
+
+.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px ;
+    margin-top: 15px;
+}
+
+.partnerLogos{
+    height: 60px ;
+    width: auto;
+}
+
+.intro{
+    h1{
+        font-family: 'DM Serif Display', serif;
+        font-size: 40px ;
+        margin-top: 20px;
+
+        // media query for mobile
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}
+
+
+// pillars accordion
+
+// Accordion.scss
+
+.Sctitle{
+    font-family: 'DM Serif Display', serif;
+    font-size:45px ;
+    line-height: 50px;
+    padding: 5px 15px 2px  2px ;
+    margin-top: 20px;
+}
+
+.accordionItem {
+
+    border-left: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  
+    .accordionHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+  
+     
+  
+      h3 {
+          font-family: 'DM Serif Display', serif;
+          font-size:35px ;
+      }
+  
+     
+    }
+  
+    .accordionContent {
+      // max-height: 0;
+      // overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+  
+      p {
+  
+        font-family: 'Inter', sans-serif;
+        font-size: 16px ;
+      }
+    }
+  
+    &.active .accordionContent {
+      max-height: 100vh;
+      transition: max-height 0.5s ease-in-out;
+    }
+  }
+  

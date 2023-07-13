@@ -1,0 +1,66 @@
+.hero{
+    background: linear-gradient(360deg, rgba(85, 25, 109, 0.795) 50%, rgba(2, 2, 2, 0.192) 100%),
+     url('https://res.cloudinary.com/namiri/image/upload/v1689098217/Women_s_Day_Event_1_1_ignoof.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    // justify-content: end;
+    align-items: flex-end;
+
+    @media screen and (max-width: 468px) {
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.text{
+   
+    font-size: 15px;
+    line-height: 20px;
+    
+}
+
+.teams{
+   
+    h3{
+        font-family: 'FlexaMedium';
+        font-size: 55px ;
+        line-height: 55px;
+    }
+}
+
+.teamMember{
+   
+    p{
+        font-family: 'Inter', sans-serif;
+        font-size: 15px ;
+    }
+    h4{
+        font-family: 'DM Serif Display', serif;
+        font-size: 25px ;
+        line-height: 25px;
+    }
+
+    .teamImage{
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+
+            
+    }
+
+    
+
+}
+

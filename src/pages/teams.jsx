@@ -20,9 +20,20 @@ const Teams = () => {
               <div className="container py-1 md:py-6">
                 <h1 className={` ${styles.title} text-white  `}>Our Team.</h1>
 
-                <p className={ `${styles.text} text-white md:w-2/5 mt-4 md:mt-6 `  }> 
-                Our team is comprised of a dynamic and diverse group of legal practitioners, including esteemed judges, accomplished senators, and experienced arbitrators. Together, we are united by our shared passion for advancing the field of Alternative Dispute Resolution (ADR) and pushing the boundaries to achieve WADR's mission.
-                </p>
+
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-one">
+                    <p className={ `${styles.text} text-white  mt-4 md:mt-6 `  }> 
+                    Our Team comprises a dynamic group of professionals dedicated to promoting peaceful resolutions and fostering gender equality within the field of ADR. Talented women from various backgrounds and expertise, united by a common passion for conflict resolution and social justice. 
+                    </p>
+                  </div>
+                  <div className="text-one">
+                    <p className={ `${styles.text} text-white  mt-4 md:mt-6 `  }> 
+                    Our team consists of accomplished mediators, Arbitrators, negotiators, and facilitators, who have successfully resolved countless disputes across a wide range of sectors, including commercial, employment, family, community, and international conflicts, with a deep understanding of the complexities and nuances involved in dispute resolution
+                    </p>
+                  </div>
+                </div>
+                
                 {/* div flex buttons around */}
               
               </div>

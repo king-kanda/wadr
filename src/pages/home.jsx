@@ -19,7 +19,7 @@ const Home = () => {
                           <div className="container py-1 md:py-6">
                             <h1 
                             className={` ${styles.title} text-white  `}>
-                            <span className='text-yellow'>Empowering</span>  Women, Elevating the Field of ADR
+                            <span className='text-yellow'>Positioning </span>  Women in ADR .
                             </h1>
 
                             <p className={ `${styles.text} text-white md:w-2/3  mt-4 md:mt-6 `  }> 

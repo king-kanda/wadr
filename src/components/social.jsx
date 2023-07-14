@@ -13,7 +13,7 @@ const Social = () => {
                     <div className="w-full lg:w-6/12">
                         <h2 className={`text-white text-center md:text-start ${styles.heading}`}>Stay Connected.</h2>
                         <p className={`mt-2 mb-4 text-white md:w-3/4 ${styles.leading} text-center md:text-start `}>
-                            We are here to answer any questions you may have about our experiences. Reach out to us and we'll respond as soon as we can.
+                           Feel free to contact us via email should you have any questions or concerns. 
                         </p>
                     </div>
                     <div className="text-center">

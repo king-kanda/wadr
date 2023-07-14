@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Layout , Partners , Accordion, News} from '../components'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 
 import styles from '../styles/home.module.scss'
+
 import { Link } from 'react-router-dom'
 
 
 const Home = () => {
+
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+      // Fetch user data from the API
+      fetch('https://blog.womeninadr.com/wp-json/wp/v2/posts?per_page=1&_embed')
+      .then(response => response.json())
+      .then(data => setBlogs(data));
+
+  }, []);
+
   return (
     <>
         <Layout>
@@ -29,9 +41,49 @@ const Home = () => {
                           
                           </div>
                         </div>
-                        <div className={` col-span-1 bg-yellow p-5 md:p-12 ${styles.news} `}>
-                          {/* news section */}
+                        <div className={` col-span-1 bg-purple-1 p-5 md:p-12 ${styles.news} `}>
+                        
+                            <div className={`  ${styles.newsCard} my-5 `}>
+                             
+
+                                {blogs.map((blog) => (
+                                  <div 
+                                  key={blog.id}
+                                  className="card-1 border-t-2 py-6">
+                                      <div className="news-tittle">
+                                          <Link to={`/news-blogs/${blog.slug}`}>
+                                              <h3 className='hover:underline hover:underline-offset-8 decoration-yellow '>
+                                                {blog.title.rendered}
+                                              </h3>
+                                          </Link>
+                                      </div>
+                                      <div className="exapt-sectiom">
+                                          {/* <p className='text-white'>
+                                            {blog.excerpt.rendered}
+                                          </p> */}
+                                          <div className='py-5' dangerouslySetInnerHTML={{ __html: blog.excerpt.rendered }}></div>
+                                      </div>
+                                      <div className="news-date flex items-center justify-between py-5">
+                                          <div className="category">
+                                              <p>
+                                                  News
+                                              </p>
+                                          </div>
+                                          <div className="date">
+                                              <p className='text-yellow'>
+                                                  {new Date(blog.date).toLocaleDateString('en-US')}
+                                              </p>
+                                          </div>
+                                      </div>  
+                                  </div>
+
+                                ))}
+                                
+                             
+                            </div>
+                            
                         </div>
+
                       </div>
                     </div>
                 </section>

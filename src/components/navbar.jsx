@@ -23,9 +23,9 @@ const Navbar = () => {
                     <li className={` ${styles.navlink} `}>
                             <Link to='/committee-members'>The Team</Link>
                     </li>
-                    <li className={` ${styles.navlink} disabled `}>
+                    {/* <li className={` ${styles.navlink} disabled `}>
                             <Link to='/about'>Programs</Link>
-                    </li>
+                    </li> */}
                     <li className={` ${styles.navlink} `}>
                             <Link to='/about'>Events</Link>
                     </li>

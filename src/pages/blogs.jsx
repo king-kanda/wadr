@@ -17,7 +17,7 @@ const Blog = () => {
 
     }, []);
 
-    // console.log(blogs._embedded["wp:featuredmedia"][0].source_url)
+    
 
   return (
     <>

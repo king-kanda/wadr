@@ -39,3 +39,65 @@
 
     }
 }
+
+
+
+// individual blog page
+
+.Image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center center;
+
+    .Img1{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+}
+
+.content{
+    p{
+        padding-top: 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px ;
+        margin-top: 15px;
+    }
+
+    h2{
+        font-size: 50px;
+        line-height: 55px;
+        font-family: 'DM Serif Display', serif;
+    }
+}
+
+
+.introC {
+    font-size: 50px;
+    // color: #000000;
+    margin-bottom: 1rem;
+}
+.authorName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 25px;
+        margin-bottom: 1rem;
+        font-family: 'DM Serif Display', serif;
+    }
+}
+.authorImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}

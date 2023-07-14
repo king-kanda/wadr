@@ -1,0 +1,23 @@
+.heroSec{
+   
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+    P{
+        font-family: 'Inter', sans-serif;
+        font-size: 15px ;
+    }
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 150px ;
+       
+        @media (max-width: 468px) {
+            font-size: 100px ;
+        }
+    }
+   
+    
+}

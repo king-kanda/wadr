@@ -27,7 +27,7 @@ const Navbar = () => {
                             <Link to='/about'>Programs</Link>
                     </li> */}
                     <li className={` ${styles.navlink} `}>
-                            <Link to='/about'>Events</Link>
+                            <Link to='/events'>Events</Link>
                     </li>
                     <li className={` ${styles.navlink} `}>
                             <Link to='/news-blogs'> Blogs </Link>

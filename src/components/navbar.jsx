@@ -9,7 +9,7 @@ const Navbar = () => {
          <nav className=" px-2 sm:px-6 py-2 bg-gray">
             <div className=" flex justify-between items-center">
                 <Link to="/" className="flex items-center">
-                    <img src='./logo.png ' alt="" className={` ${styles.logo} `}/>
+                    <img src='https://res.cloudinary.com/namiri/image/upload/v1689296105/logo_3_fxmage.png' alt="" className={` ${styles.logo} `}/>
                 </Link>
                 <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul className="flex inter items-center justify-center  text-black flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">

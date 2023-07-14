@@ -3,6 +3,7 @@ import { Layout , Partners , Accordion, News} from '../components'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 
 import styles from '../styles/home.module.scss'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -53,11 +54,11 @@ const Home = () => {
 
                           </p>
                           <div className="link mt-6">
-                            <a href="/about" className='text-purple underline underline-offset-8 font-bold inline-flex items-center'>Learn More 
+                            <Link to="/about" className='text-purple underline underline-offset-8 font-bold inline-flex items-center'>Learn More 
                               <span className="px-3">
                                 <MdKeyboardDoubleArrowRight/>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                       </div>
                     </div>

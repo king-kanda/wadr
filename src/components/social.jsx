@@ -31,7 +31,7 @@ const Social = () => {
                     <div className="flex items-center md:flex-wrap justify-around">
                         <div className={` ${styles.icons1} `}>
                            <a href="https://www.linkedin.com/company/women-in-adr/">
-                            <button  className='border-2 border-yellow px-3 md:px-10 py-3'>
+                            <button  className='border-2 border-yellow px-2 md:px-10 py-3'>
                                     <p className="inline-flex items-center justify-between">
                                         <span className='px-3 icon'>
                                             <FaLinkedinIn/>
@@ -45,7 +45,7 @@ const Social = () => {
                         </div>
                         <div className={` ${styles.icons1} `}>
                             <a href="https://twitter.com/womeninadr?t=381J79x1wbGDs-0BrvU7cQ&s=08">
-                                <button className='border-2 border-yellow px-3 md:px-10 py-3'>
+                                <button className='border-2 border-yellow px-2 md:px-10 py-3'>
                                     <p className="inline-flex items-center justify-between">
                                         <span className='px-3'>
                                             <FaTwitter/>
@@ -59,7 +59,7 @@ const Social = () => {
                         </div>
                         <div className={` ${styles.icons1} `}>
                            <a href="https://instagram.com/women_in_adr?igshid=MzRlODBiNWFlZA==">
-                            <button className='border-2 border-yellow px-3 md:px-10 py-3'>
+                            <button className='border-2 border-yellow px-2 md:px-10 py-3'>
                                     <p className="inline-flex items-center justify-between">
                                         <span className='px-3'>
                                             <FaInstagram/>
@@ -75,7 +75,7 @@ const Social = () => {
                         <div className={` ${styles.icons1} `}>
                             <a href="https://www.facebook.com/WomeninADR?mibextid=ZbWKwL">
                                 <button 
-                                className='border-2 border-yellow px-3 md:px-10 py-3'>
+                                className='border-2 border-yellow px-2 md:px-10 py-3'>
                                     <p className="inline-flex items-center justify-between">
                                         <span className='px-3'>
                                             <FaFacebookF/>

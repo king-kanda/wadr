@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import Link from "next/link";
+import Image from "next/image";
+import { BsPhoneFill , BsMailbox2 } from "react-icons/bs";
+import { Oswald , Raleway} from '@next/font/google'
+import styles from '@/styles/nav.module.scss'
+const oswald = Oswald({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ['latin'] })
 
-import styles from '../styles/nav.module.scss'
 
-const Navbar = () => {
+const Nav = () => {
+
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,14 +19,19 @@ const Navbar = () => {
     };
 
 
-  return (
-    <>
-         <nav className=" px-2 sm:px-6 py-2 bg-gray">
-            <div className=" flex justify-between items-center">
-                <Link to="/" className="flex items-center">
-                    <img src='https://res.cloudinary.com/namiri/image/upload/v1689296105/logo_3_fxmage.png' alt="" className={` ${styles.logo} `}/>
-                </Link>
-                <div className="md:hidden sm:block px-4">
+
+    return (
+        <>
+        {/* display email  */}
+        
+        <div className="container bg-transparent  top-0 z-10">            
+            <nav className="flex bg-white   items-center justify-between py-2">
+                    <div className="p-4">
+                        <Link href="/">
+                             <Image src="/logo-m.svg" width={150} height={70} alt="magicalkenya_logo"/>
+                        </Link>
+                    </div>
+                    <div className="md:hidden sm:block px-4">
                         <button 
                             type="button"
                             className="text-black px-4 py-3 rounded "
@@ -31,61 +42,44 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-                <ul className="flex inter items-center justify-center  text-black flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                    
-                    <li className={` ${styles.navlink} `}>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li className={` ${styles.navlink} `}>
-                            <Link to='/about'>About Us</Link>
-                    </li>
-                    <li className={` ${styles.navlink} `}>
-                            <Link to='/committee-members'>The Team</Link>
-                    </li>
-                    {/* <li className={` ${styles.navlink} disabled `}>
-                            <Link to='/about'>Programs</Link>
-                    </li> */}
-                    <li className={` ${styles.navlink} `}>
-                            <Link to='/events'>Events</Link>
-                    </li>
-                    <li className={` ${styles.navlink} `}>
-                            <Link to='/news-blogs'> Blogs </Link>
-                    </li>
-                
-
-                </ul>
-                
-                
-                
-                </div>
-                <div className="btn-class hidden md:block">
-                    <div className="flex items-center justify-between">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform">
-                                <button className={`px-4 py-3 bg-white border border-2 border-purple text-purple`}>
-                                    Join Us
-                                </button>
-                        </a>
-                        <Link to='/contact'  className='px-2'> 
-                            <button className={`px-4 py-3 bg-white border border-2 border-purple text-purple`}>
-                                Contact Us
-                            </button>
-                        </Link>
+                    <div className="nav-hoolder  hidden w-full md:block md:w-auto " id="mobile-menu">
+                        <ul className="flex flex-col mt-4 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium">
+                            <li className="p-4">
+                                <Link href="/">
+                                    Home
+                                </Link>
+                            </li>
+                            <li className="p-4">
+                                <Link href="/about">About Us </Link>
+                            </li>
+                            <li className="p-4">
+                                <Link href="/services"> Services </Link>
+                            </li>
+                            <li className="p-4">
+                                <Link href="/projects"> Projects </Link>
+                            </li>
+                            <li className="p-4">
+                                <Link href="/contact"> Blogs </Link>
+                            </li>
+                          
+                        </ul>
                     </div>
-                    
-                </div>
-            </div>
-        </nav>
-         {/* mobile menu  */}
-         <div role="dialog" aria-modal="true" className={` ${styles.MobileMenu} `}>
-                    <div focus="true" className={`fixed inset-0 z-10 overflow-y-auto bg-gray px-6 py-6 lg:hidden  ${isOpen ? 'block' : 'hidden'}`}>
+                    <div className="hidden md:block">
+                        <button className="bg-orange-500 text-white px-4 py-3 rounded ">
+                            <Link href="/contact"> Contact Us</Link>
+                        </button>
+                    </div>
+            </nav>
+            {/* mobile menu  */}
+            <div role="dialog" aria-modal="true">
+                    <div focus="true" className={`fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden  ${isOpen ? 'block' : 'hidden'}`}>
                         <div className="flex items-center justify-between">
                         <Link href="/" className="-m-1.5 p-1.5">
-                            <img src="https://res.cloudinary.com/namiri/image/upload/v1689296105/logo_3_fxmage.png" className={` ${styles.logo} `} alt="WADR"/>
+                            <Image src="/logo-m.svg" width={200} height={200} alt="mbajao logo"/>
                         </Link>
                         <button 
                              type="button"
-                             className="-m-2.5 rounded-md p-2.5 "
+                             className="-m-2.5 rounded-md p-2.5 text-gray-700"
                              onClick={handleToggle}
                             >
                             <span className="sr-only">Close menu</span>
@@ -119,8 +113,12 @@ const Navbar = () => {
                         </div>
                     </div>
             </div>
-    </>
-  )
+
+        </div>
+            
+     </>
+
+    );
 }
 
-export default Navbar;
+export default Nav;

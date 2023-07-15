@@ -26,9 +26,9 @@ const Home = () => {
                 <section className={` ${styles.hero} `}>
                     <div className="hero-body ">
                       <div className="md:grid grid-cols-3 gap-6">
-                        <div className={`col-span-2 p-5 md:p-12 ${styles.heroSub}`}>
+                        <div className={`col-span-2 p-3 md:p-12 ${styles.heroSub}`}>
                           {/* hero sectio main */}
-                          <div className="container py-1 md:py-6">
+                          <div className="container py-2 md:py-6">
                             <h1 
                             className={` ${styles.title} text-white  `}>
                             <span className='text-yellow'>Positioning </span>  Women in ADR .
@@ -41,7 +41,7 @@ const Home = () => {
                           
                           </div>
                         </div>
-                        <div className={` col-span-1 bg-purple-1 p-5 md:p-12 ${styles.news} `}>
+                        <div className={` col-span-1 bg-purple-1 p-5 md:p-12 ${styles.news} hidden md:block `}>
                         
                             <div className={`  ${styles.newsCard} my-5 `}>
                              

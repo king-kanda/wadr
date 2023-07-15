@@ -27,7 +27,7 @@ const Social = () => {
                     </div>
                 </div>
                 {/* buttons */}
-                <div className={`socialButtons mt-4 px:0 md:px-6`}>
+                <div className={`socialButtons mt-6 px:0 md:px-6`}>
                     <div className="flex items-center md:flex-wrap justify-around">
                         <div className={` ${styles.icons1} `}>
                            <a href="https://www.linkedin.com/company/women-in-adr/">

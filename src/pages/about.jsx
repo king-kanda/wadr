@@ -67,7 +67,7 @@ const About = () => {
                             <Image className={` ${styles.Img1}  `} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689242712/Africa_Nazarene_Mediation_Moot_svg9tk.jpg" />
                           </div>
                         </div>
-                        <div className={` ${styles.textSection} text-end px-3 py-6 md:py-3`}>
+                        <div className={` ${styles.textSection} text-end px-3 py-6 md:py-3 hidden md:block`}>
                             <h2>
                               Our Mission ,<br /> Vission & Beliefs.
                             </h2>

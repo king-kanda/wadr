@@ -30,10 +30,10 @@ const Teams = () => {
           return 3
         } else if (windowWidth >= 480 && windowWidth <= 768) {
           console.log("hello")
-          return 1.5
+          return 1
         } else {
           console.log("yooh")
-          return 1.5
+          return 1
         }
       }
    
@@ -46,7 +46,7 @@ const Teams = () => {
            
            
             {/* slider section */}
-            <div ref={sliderRef} className={` mx-8 my-4 container keen-slider`}>
+            <div ref={sliderRef} className={` mx-3 md:mx-8 my-4 container keen-slider`}>
                 
                 {teams.map((member, index) => (
                     <div 

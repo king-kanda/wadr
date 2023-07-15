@@ -89,7 +89,7 @@ const Home = () => {
                 </section>
                 <Partners />
                 <section className={` ${styles.aboutSec} bg-gray-1 `}>
-                  <div className="container px-16 py-12">
+                  <div className="container  p-7 md:px-16 md:py-12">
                     <div className="md:grid grid-cols-2 gap-6">
                       <div className={`col-span-1 ${styles.aboutTt} `}>
                           <h2 className={` text-purple `}>
@@ -116,11 +116,11 @@ const Home = () => {
                     </div>
                   </div>
                 </section>
-                <section className={` p-12 container ${styles.accordion} `}>
-                    <div className="grid grid-cols-2 gap-5">
+                <section className={` p-6 md:p-12 container ${styles.accordion} `}>
+                    <div className="md:grid grid-cols-2 gap-5">
                         <div className={`intro p-6  `}>
                             <p className='font-bold underline underline-offset-8'> Key Pillars & Drivers : </p>
-                            <h2 className={` ${styles.Sctitle} text-purple w-4/5`}>
+                            <h2 className={` ${styles.Sctitle} text-purple md:w-4/5`}>
                                 Driving the Future of ADR.
                             </h2>
                         </div>

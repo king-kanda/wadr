@@ -100,9 +100,9 @@ const Navbar = () => {
                                 <div className="space-y-2 py-6 px-5 text-xl">
                                     <Link 
                                     onClick={handleToggle}
-                                    href="/" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Home </Link>
+                                    to="/" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Home </Link>
 
-                                    <Link onClick={handleToggle} href="about" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> About Us </Link>
+                                    <Link onClick={handleToggle} to="/about" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> About Us </Link>
 
                                     <Link onClick={handleToggle} href="/services" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Services </Link>
 

@@ -20,15 +20,20 @@ const Teams = () => {
       function calculatePerView() {
         const windowWidth = window.innerWidth
     
+        
+
         // Adjust the perView value based on the window width
         if (windowWidth >= 1024) {
           return 3
-        } else if (windowWidth >= 768) {
+        } else if (windowWidth >= 768  && windowWidth <= 1024) {
+          console.log("holla")
           return 3
-        } else if (windowWidth >= 480) {
+        } else if (windowWidth >= 480 && windowWidth <= 768) {
+          console.log("hello")
           return 1.5
         } else {
-          return 3
+          console.log("yooh")
+          return 1.5
         }
       }
    
@@ -65,4 +70,4 @@ const Teams = () => {
   )
 }
 
-export default Teams
+export default Teams;

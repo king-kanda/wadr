@@ -4,6 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    @media screen and (max-width: 468px) {
+        height: 70vh;
+        display: block;
+        justify-content: center;
+        align-items: flex-end;
+       
+    }
    
     P{
         font-family: 'Inter', sans-serif;
@@ -15,7 +23,8 @@
         font-size: 150px ;
        
         @media (max-width: 468px) {
-            font-size: 100px ;
+            font-size: 60px ;
+            padding-top: 60px;
         }
     }
    

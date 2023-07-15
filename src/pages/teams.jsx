@@ -16,12 +16,12 @@ const Teams = () => {
         </div>
         <main>
             <section className={` ${styles.hero} `}>
-              <div className="hero-body p-5 md:p-12">
+              <div className="hero-body p-4 md:p-12">
               <div className="container py-1 md:py-6">
                 <h1 className={` ${styles.title} text-white  `}>Our Team.</h1>
 
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="md:grid grid-cols-2 gap-6">
                   <div className="text-one">
                     <p className={ `${styles.text} text-white  mt-4 md:mt-6 `  }> 
                     Our Team comprises a dynamic group of professionals dedicated to promoting peaceful resolutions and fostering gender equality within the field of ADR. Talented women from various backgrounds and expertise, united by a common passion for conflict resolution and social justice. 

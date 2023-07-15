@@ -16,8 +16,8 @@ const News = () => {
 
   return (
     <>
-        <section className={` ${styles.NewSection} bg-gray-2 px-24 py-12`}>
-            <div className="container p-12 ">
+        <section className={` ${styles.NewSection} bg-gray-2 p-6 md:px-24 md:py-12`}>
+            <div className="container p-4 md:p-12 ">
 
                 <div className="title-sec">
                     <h2 className={`text-start my-12 ${styles.heading}`}>
@@ -26,7 +26,7 @@ const News = () => {
 
                 </div>
                 <div className={`  ${styles.newsCard} my-5 `}>
-                    <div className="grid grid-cols-4 gap-12">
+                    <div className="md:grid grid-cols-4 gap-12">
 
                       {blogs.map((blog) => (
                         <div 

@@ -111,7 +111,7 @@ const Navbar = () => {
 
                                     <Link onClick={handleToggle} to='/news-blogs' className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Blogs </Link>
 
-                                    <Link onClick={handleToggle} href="/contact" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Contact Us </Link>
+                                    <Link onClick={handleToggle} to="/contact" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Contact Us </Link>
 
                                 </div>
                                

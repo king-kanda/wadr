@@ -104,12 +104,12 @@ const Navbar = () => {
 
                                     <Link onClick={handleToggle} to="/about" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> About Us </Link>
 
-                                    <Link onClick={handleToggle} href="/services" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Services </Link>
+                                    <Link onClick={handleToggle} to='/committee-members'className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> The Team </Link>
 
 
-                                    <Link onClick={handleToggle} href="/projects" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Projects </Link>
+                                    <Link onClick={handleToggle} to='/events'className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Events </Link>
 
-                                    <Link onClick={handleToggle} href="/blogs" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Blogs </Link>
+                                    <Link onClick={handleToggle} to='/news-blogs' className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Blogs </Link>
 
                                     <Link onClick={handleToggle} href="/contact" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"> Contact Us </Link>
 

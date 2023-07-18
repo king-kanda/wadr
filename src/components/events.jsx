@@ -18,11 +18,23 @@ const Events = () => {
         'https://blog.womeninadr.com/wp-json/tribe/events/v1/events/?page=1&per_page=50&start_date=2000-01-01%2000:00:00&end_date=2047-12-31%2023:59:59&status=publish'
       );
       const data = await response.json();
-      setEvents(data.events);
+
+      // Sort events based on start date in descending order
+      const sortedEvents = data.events.sort(
+        (a, b) => new Date(b.start_date) - new Date(a.start_date)
+      );
+
+      setEvents(sortedEvents);
       setIsLoading(false); // Set loading status to false after data is fetched
     } catch (error) {
       console.error('Error fetching events:', error);
     }
+  };
+
+  const isUpcomingEvent = (startDate) => {
+    const currentDate = new Date();
+    const eventStartDate = new Date(startDate);
+    return eventStartDate > currentDate;
   };
 
   return (
@@ -63,9 +75,12 @@ const Events = () => {
                         <p className={`${styles.EventsDate}`}>
                           {event.start_date_details.month}/{event.start_date_details.day}/{event.start_date_details.year}
                         </p>
+                        {isUpcomingEvent(event.start_date) && (
+                          <p className={`${styles.EventsLabel}`}>Upcoming</p>
+                        )}
                       </div>
                       <div className="btn-holder">
-                          <Link to={`/events/${event.id}`}>
+                        <Link to={`/events/${event.id}`}>
                           <button
                             className={`${styles.EventsBtn} border rounded-full hover:bg-purple hover:text-white px-4 py-2`}
                           >
@@ -84,5 +99,6 @@ const Events = () => {
     </>
   );
 };
+
 
 export default Events;

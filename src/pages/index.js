@@ -6,3 +6,4 @@ export { default as Teams } from './teams';
 export { default as Blogs } from './blogs';
 export { default as Blog } from './blog';
 export { default as Events } from './events';
+export { default as Event } from './event';

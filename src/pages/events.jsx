@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '../components'
+import { Layout , EventCards } from '../components'
 
 import styles from '../styles/events.module.scss'
 
@@ -20,6 +20,11 @@ const Events = () => {
 
                           </p>
                         </div>
+                    </div>
+                </section>
+                <section className={` bg-gray p-4 md:py-20 `}>
+                    <div className="container p-1 md:px-14">
+                      <EventCards/>
                     </div>
                 </section>
             </main>

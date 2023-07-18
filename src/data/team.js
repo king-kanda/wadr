@@ -53,7 +53,7 @@ export const teams = [
     {
       name: 'Philomena Mbaye',
       position: 'Administrative Assistant',
-      image: 'https://res.cloudinary.com/namiri/image/upload/v1689101070/Philomena_Mbaye_-_Admin_Assistant_bmu47h.jpg',
+      image: 'https://res.cloudinary.com/namiri/image/upload/v1689579530/Philomena_Mbaye_-_Admin_Assistant_2_e7aokb.jpg',
     },
   ]
 

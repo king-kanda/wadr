@@ -6,7 +6,7 @@
     align-items: flex-end;
 
     @media screen and (max-width: 468px) {
-        height: 70vh;
+        height: 60vh;
         display: block;
         justify-content: center;
         align-items: flex-end;
@@ -29,4 +29,35 @@
     }
    
     
+}
+
+// events cards and sections
+
+.EventsImage{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.EventsTitle{
+
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px ;
+    line-height: 40px;
+    
+    @media (max-width: 468px) {
+        font-size: 30px ;
+        line-height: 30px;
+    }
+}
+
+.EventsDate , .EventsBtn , .EventsTime{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px ;
+}
+
+.Description{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px ;
+    line-height: 25px;
+   
 }

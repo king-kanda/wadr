@@ -1,6 +1,7 @@
 {
   "name": "wadr",
   "private": true,
+  "homepage": "https://womeninadr.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

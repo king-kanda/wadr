@@ -25,11 +25,6 @@
     font-size: 28px;
 }
 
-.join{
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-}
 
 .icons1{
     color: white;
@@ -53,4 +48,44 @@
         width: 100px;
         height: auto;
     }
+}
+
+
+// fancy button
+
+.Famcy{
+    a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      
+      a span{
+        position: relative;
+        z-index: 2;
+      }
+      
+      a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all .35s;
+      }
+      
+      a:hover{
+        color: #fff;
+      }
+      
+      a:hover:after{
+        width: 100%;
+      }
 }

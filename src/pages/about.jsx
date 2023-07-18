@@ -33,7 +33,7 @@ const About = () => {
                       <div className="container p-6 md:my-4 md:px-24">
                         <div className="md:grid grid-cols-2 gap-6 items-center">
                           <div className={`col-span-1 ${styles.aboutTt} ml-2 md:ml-24`}>
-                              <h2 className={` text-purple bg-white py-2 px-6 md:w-2/5 text-center `}>
+                              <h2 className={` text-purple bg-white py-2 px-6 lg:w-2/5 md:w-4/5 text-center `}>
                                 About Us 
                               </h2>
                             <p className={` p-2 mt-6 text-white ${styles.abText}  md:w-3/3 `}>

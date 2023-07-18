@@ -29,11 +29,11 @@ const Blog = () => {
                             <Image className={` ${styles.Img1} `} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689098217/Women_s_Day_Event_1_1_ignoof.jpg" />
                         </section>
 
-                        <section className={`bg-gray-2 p-8 mb-6 `}>
-                            <div className='container px-8'>
+                        <section className={`bg-gray-2 p-2 md:p-8 mb-6 `}>
+                            <div className='container p-2 md:px-8'>
                                 <div className={` grid grid-cols-1 md:grid-cols-3 gap-4 `}>
                                     {/* comtent section */}
-                                    <div className={` ${styles.content} bg-white -mt-24 p-16 col-span-2`}>
+                                    <div className={` ${styles.content} bg-white -mt-24 p-8 md:p-16 col-span-2`}>
                                         <h2 className={`  text-purple ${styles.introC} `}>
                                             {blogs[0].title.rendered} <span className="text-yellow ">.</span>
                                         </h2>
@@ -52,7 +52,7 @@ const Blog = () => {
 
 
                                     {/* author section only on desktop */}
-                                    <div className={`col-span-1`}>
+                                    <div className={`col-span-1 hidden md:block`}>
                                         <div className={` ${styles.author} `}>
                                             {/* author name  */}
                                             <div className={`  text-gray-700 ${styles.authorName} `}>

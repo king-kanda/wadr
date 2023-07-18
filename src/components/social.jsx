@@ -16,11 +16,11 @@ const Social = () => {
                            Feel free to contact us via email should you have any questions or concerns. 
                         </p>
                     </div>
-                    <div className="text-center">
+                    <div className={` text-center ${styles.Famcy} `}>
                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform">
-                            <button className={` ${styles.join} px-8 py-4 bg-yellow text-white`}>
+                            <span className={` ${styles.join} px-8 py-4 bg-yellow text-white`}>
                                 Join The Membership
-                            </button>
+                            </span>
                         </a> 
                             
                         

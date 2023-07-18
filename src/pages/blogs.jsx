@@ -23,8 +23,8 @@ const Blog = () => {
     <>
     <Navbar/>
     <main>
-        <section className={` ${styles.blogSection} bg-purple px-12 py-12`}>
-            <div className="container p-12 ">
+        <section className={` ${styles.blogSection} bg-purple p-6 md:p-12`}>
+            <div className="container p-4 md:p-12 ">
                 <div className={` ${styles.title} `}>
                     <h2 className={`text-start text-white my-12 ${styles.heading}`}>
                         News & Blogs .
@@ -32,9 +32,9 @@ const Blog = () => {
                 </div>
               </div>
         </section>
-        <section className={` py-6 px-24 bg-gray-2  `}>
-            <div className="container p-12 ">
-                <div className="grid grid-cols-3 gap-12">
+        <section className={` p-4 md:py-6 md:px-24 bg-gray-2  `}>
+            <div className="container p-4 md:p-12 ">
+                <div className="md:grid grid-cols-3 gap-12">
 
                   {blogs.map((blog) => (
                     <div 

@@ -7,3 +7,5 @@ export { default as Accordion } from './accordion';
 export { default as Team } from './teams';
 export { default as News } from './news';
 export { default as Layout } from './layout';
+export { default as EventCards } from './events';
+export { default as Scroll } from './scroll';

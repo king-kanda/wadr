@@ -8,35 +8,37 @@ import styles from '../styles/about.module.scss'
 
 const Teams = () => {
 
+  function calculatePerView() {
+    const windowWidth = window.innerWidth
+
+    
+
+    // Adjust the perView value based on the window width
+    if (windowWidth >= 1024) {
+      return 3
+    } else if (windowWidth >= 768  && windowWidth <= 1024) {
+      console.log("holla")
+      return 3
+    } else if (windowWidth >= 480 && windowWidth <= 768) {
+      console.log("hello")
+      return 1
+    } else {
+      console.log("yooh")
+      return 1
+    }
+  }
+
+
       const [sliderRef] = useKeenSlider({
         loop: true,
         mode: "free-snap",
         slides: {
           perView: calculatePerView(),
-          spacing: 15,
+          spacing: 35,
         },
       })
     
-      function calculatePerView() {
-        const windowWidth = window.innerWidth
-    
-        
-
-        // Adjust the perView value based on the window width
-        if (windowWidth >= 1024) {
-          return 3
-        } else if (windowWidth >= 768  && windowWidth <= 1024) {
-          console.log("holla")
-          return 3
-        } else if (windowWidth >= 480 && windowWidth <= 768) {
-          console.log("hello")
-          return 1
-        } else {
-          console.log("yooh")
-          return 1
-        }
-      }
-   
+      
 
   return (
 

@@ -34,8 +34,8 @@ const Home = () => {
                             <span className='text-yellow'>Positioning </span>  Women in ADR .
                             </h1>
 
-                            <p className={ `${styles.text} text-white md:w-2/3  mt-4 md:mt-6 `  }> 
-                            WADR is dedicated to paving the way for women from diverse professional and cultural backgrounds to excel in the field of Alternative Dispute Resolution (ADR). We believe that by preparing and positioning women in ADR on both national and international platforms, we can create a more inclusive and dynamic field of dispute resolution
+                            <p className={ `${styles.text} text-white md:w-3/4  mt-4 md:mt-6 `  }> 
+                            Women In ADR (WADR) is dedicated to paving the way for women from diverse professional and cultural backgrounds to excel in the field of Alternative Dispute Resolution (ADR). We believe that by preparing and positioning women in ADR on both national and international platforms, we can create a more inclusive and dynamic field of dispute resolution.
                             </p>
                             {/* div flex buttons around */}
                           
@@ -136,4 +136,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home ;

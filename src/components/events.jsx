@@ -44,7 +44,7 @@ const Events = () => {
           {isLoading ? (
             <p>Fetching events, hang tight...</p> // Display loading message
           ) : (
-            <div className="md:grid grid-cols-3 gap-7">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
               {events.map((event) => (
                 <div
                   className={`${styles.EventsCards} border rounded-lg my-5`}
@@ -63,32 +63,33 @@ const Events = () => {
                     )}
                   </div>
 
-                  <div className="content-container p-3 md:p-6">
-                    <div className={`${styles.EventsText}`}>
-                      <h3 className={`${styles.EventsTitle}`}>
-                        {event.title}
-                      </h3>
-                    </div>
+                  <div className="h-52 content-container flex flex-col justify-between p-3 md:p-6">
+                      <div className={styles.EventsText}>
+                        <h3 className={styles.EventsTitle}>{event.title}</h3>
+                      </div>
 
-                    <div className="flex items-center justify-between mt-6">
-                      <div className="date">
-                        <p className={`${styles.EventsDate}`}>
-                          {event.start_date_details.month}/{event.start_date_details.day}/{event.start_date_details.year}
-                        </p>
-                        {isUpcomingEvent(event.start_date) && (
-                          <p className={`${styles.EventsLabel}`}>Upcoming</p>
-                        )}
+                      <div className="flex items-end justify-between mt-6">
+                        <div className="date">
+                          <div>
+                            <p className={styles.EventsDate}>
+                              {event.start_date_details.month}/{event.start_date_details.day}/{event.start_date_details.year}
+                            </p>
+                            {isUpcomingEvent(event.start_date) && (
+                              <p className={`${styles.EventsLabel} bg-purple rounded-full px-5 py-1 text-white`}>
+                                Upcoming
+                              </p>
+                            )}
+                          </div>
+                        </div>
+
+                        <div className="btn-holder">
+                          <Link to={`/events/${event.id}`}>
+                            <button className={`${styles.EventsBtn} border-yellow rounded-full bg-yellow hover:bg-purple hover:text-white px-4 py-2`}>
+                              Details & Info
+                            </button>
+                          </Link>
+                        </div>
                       </div>
-                      <div className="btn-holder">
-                        <Link to={`/events/${event.id}`}>
-                          <button
-                            className={`${styles.EventsBtn} border rounded-full hover:bg-purple hover:text-white px-4 py-2`}
-                          >
-                            Details & Info
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
                   </div>
                 </div>
               ))}

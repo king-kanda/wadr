@@ -19,7 +19,7 @@ const About = () => {
                         Who Are We?</h1>
 
                         <p className={ `${styles.text} text-white md:w-4/5 mt-2 md:mt-4 `  }> 
-                        <span className='text-yellow font-bold'>Women in Alternative Dispute Resolution (WADR </span>) is a non-profit organization dedicated to empowering and elevating women practitioners in the field of Alternative Dispute Resolution (ADR). 
+                        <span className='text-yellow font-bold'>Women in Alternative Dispute Resolution (WADR </span>) empowers women in Alternative Dispute Resolution through training, mentorship, and advocacy, establishing ADR as the preferred mechanism for resolving disputes globally.
                         </p>
                         {/* div flex buttons around */}
                       
@@ -33,7 +33,7 @@ const About = () => {
                       <div className="container p-6 md:my-4 md:px-24">
                         <div className="md:grid grid-cols-2 gap-6 items-center">
                           <div className={`col-span-1 ${styles.aboutTt} ml-2 md:ml-24`}>
-                              <h2 className={` text-purple bg-white py-2 px-6 lg:w-2/5 md:w-4/5 text-center `}>
+                              <h2 className={` text-purple bg-white py-2 px-6 lg:w-3/5 md:w-5/5 text-center `}>
                                 About Us 
                               </h2>
                             <p className={` p-2 mt-6 text-white ${styles.abText}  md:w-3/3 `}>
@@ -57,6 +57,32 @@ const About = () => {
                     </div>              
               </section>
               <section className={` ${styles.aboutSec} bg-gray-1`}>
+                <div className="container p-6 md:py-12 md:px-24">
+                  <div className="md:grid grid-cols-2 gap-5 px-4 mt-6 items-center
+                  sm:flex-col-reverse
+                  ">
+                   
+                     
+                      <div className={` ${styles.abtText} `}>
+                          <h2 className='py-8'>
+                              About Us
+                          </h2>
+                         <p className='w-full'>
+                            Women in Alternative Dispute Resolution (WADR) a non-profit organization launched on the 18th November 2020. Since it's inception, WADR had been paying way for Women from diverse professional and cultural backgrounds to excel in the field of ADR. Our vision is to empower and elevate women ADR practitioners, enabling them to become accomplished professionals in their fields. 
+                            <br />
+                            <br />
+                            Through relentless dedication and unwavering commitment we strive to deliver ADR as the preferred mechanism for resolving disputes. With our motto, ' Forever Upwards in the journey towards becoming accomplished ADR practitioners while underscoring the objective of delivering ADR as the preferred dispute  resolution mechanism',we embody the spirit of continuous growth and excellence. At WADR we provide a supportive network where ADR practitioners can connect, collaborate, and share their experiences
+                         </p>
+                         <br />
+                        
+                      </div>
+                      <div className="image-1 border-l-8 border-yellow ">
+                        <Image className={` ${styles.Img1}  `} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689783442/Courtesy_Call_at_Njeri_Kariuki_s_zibwp6-min_ydrnkh-min_1_t7zyyl.jpg" />
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <section className={` ${styles.aboutSec} bg-gray-1`}>
                     <div className="container p-6 md:py-12 md:px-24 ">
                       <div className="md:grid grid-cols-2 gap-5 px-4 mt-6 items-center">
                         <div className="image-section md:grid grid-cols-2 gap-4">
@@ -69,7 +95,7 @@ const About = () => {
                         </div>
                         <div className={` ${styles.textSection} text-end px-3 py-6 md:py-3 hidden md:block`}>
                             <h2>
-                              Our Mission ,<br /> Vission & Beliefs.
+                              Our Mission,<br /> Vission & Beliefs
                             </h2>
 
                             <div className="text-start p-3 md:px-12 md:py-6">

@@ -19,7 +19,7 @@ const Social = () => {
                     <div className={` text-center ${styles.Famcy} `}>
                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScIgSf8A7k9EuwCzFDUcG80XzfvEvXrkcw5qlxZTecOuZ9Z3Q/viewform">
                             <span className={` ${styles.join} px-8 py-4 bg-yellow text-white`}>
-                                Join The Membership
+                            Become a Member.
                             </span>
                         </a> 
                             
@@ -27,7 +27,7 @@ const Social = () => {
                     </div>
                 </div>
                 {/* buttons */}
-                <div className={`socialButtons mt-6 px:0 md:px-6`}>
+                <div className={`socialButtons mt-6 px:0 md:px-16`}>
                     <div className="flex items-center md:flex-wrap justify-around">
                         <div className={` ${styles.icons1} `}>
                            <a href="https://www.linkedin.com/company/women-in-adr/">

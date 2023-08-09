@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: flex-end;
 
-    @media screen and (max-width: 468px) {
+    @media screen and (max-width: 768px) {
         height: 60vh;
         display: block;
         justify-content: center;
@@ -40,9 +40,10 @@
 }
 .EventsTitle{
 
-    font-family: 'DM Serif Display', serif;
-    font-size: 40px ;
-    line-height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px ;
+    font-weight: bold;
+    // line-height: 40px;
     
     @media (max-width: 468px) {
         font-size: 30px ;

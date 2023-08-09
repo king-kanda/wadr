@@ -17,10 +17,10 @@ const Contact = () => {
               Home / Contact
             </p>
             <h2 className={` ${styles.footerTT} `}>
-              Together we can make the impact needed .
+              Together, we make a lasting impact
             </h2>
             <p className={` ${styles.footerText} `}>
-            Submit the following form and our team will be in touch with you shortly. Alternatively, you can contact us via email through our mailbox: <span className='text-yellow font-bold underline underline-offset-8'> wadr@womeninadr.com </span> 
+            Submit the following form and oour team will be in touch with you as soon as possible. Alternatively, you can contact us via email through our mailbox: <span className='text-yellow font-bold underline underline-offset-8'> wadr@womeninadr.com </span> 
             </p>
             <div className="location mt-7">
                 <p className={ `${styles.footerText} underline` }> 

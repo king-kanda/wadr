@@ -27,7 +27,7 @@ const Blog = () => {
             <div className="container p-4 md:p-12 ">
                 <div className={` ${styles.title} `}>
                     <h2 className={`text-start text-white my-12 ${styles.heading}`}>
-                        News & Blogs .
+                        News & Blogs
                     </h2>
                 </div>
               </div>

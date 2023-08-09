@@ -43,7 +43,7 @@ export const teams = [
     {
       name: 'Catherine Ndenga ',
       position: 'Partnerships/Marketing',
-      image: 'https://res.cloudinary.com/namiri/image/upload/v1689101049/Catherine_Ndenga_-_Partnerships_a6qydr.jpg',
+      image: 'https://res.cloudinary.com/namiri/image/upload/v1689780790/WhatsApp_Image_2023-07-18_at_2.41.00_PM_meanx6.jpg',
     },
     {
       name: 'Phyllis Wangwe',

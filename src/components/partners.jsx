@@ -60,16 +60,57 @@ const Partners = () => {
         logo : 'https://res.cloudinary.com/namiri/image/upload/v1689115946/AMANI-COMMUNITY_z446vc.png' ,
         intro : " FAO's technical expertise and assistance contribute to our mission by providing access to knowledge resources, research findings, and best practices in sustainable agriculture and food security."
     },
-    {
-        name : 'African Nazarene University',
-        logo : 'https://res.cloudinary.com/namiri/image/upload/v1689116116/logo_2_mano6s.png' ,
-        intro : "IFAD's financial support and technical assistance contribute to our mission by providing access to knowledge resources, research findings, and best practices in sustainable agriculture and food security."
-    },
     // {
-    //     name : 'Bill and Melinda Gates Foundation' ,
-    //     logo : 'https://res.cloudinary.com/namiri/image/upload/v1688437142/logolg_g91vc0.svg' ,
-    //     intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    //     name : 'African Nazarene University',
+    //     logo : 'https://res.cloudinary.com/namiri/image/upload/v1689116116/logo_2_mano6s.png' ,
+    //     intro : "IFAD's financial support and technical assistance contribute to our mission by providing access to knowledge resources, research findings, and best practices in sustainable agriculture and food security."
     // },
+    {
+        name : 'Bill and Melinda Gates Foundation' ,
+        logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822176/Bowmans_Logo_sree7q.png' ,
+        intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822181/MacKay_Logo_ehqrho.jpg' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822171/Sycum_Solutions_Logo_g5xnex.png' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822166/Dr._Mutubwa_Law_Logo_x3ehiv.jpg' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822163/Law_Society_of_Kenya_-_Logo_tlfdca.png' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822161/FIDA-Kenya-Logo_xbylsj.webp' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822157/ICC_Kenya_-_Logo_dyeyet.jpg' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822153/East_Africa_International_Arbitration_Conference_-_Logo_ua7iu8.png' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+    {
+      name : 'Bill and Melinda Gates Foundation' ,
+      logo : 'https://res.cloudinary.com/namiri/image/upload/v1693822151/TripleOKLaw-Logo_apalaj.svg' ,
+      intro : "The Gates Foundation's support helps us develop innovative solutions and leverage technology to address global hunger and poverty, aligning with our mission of creating a more equitable and food-secure future for all."
+    },
+
    
 
   ];

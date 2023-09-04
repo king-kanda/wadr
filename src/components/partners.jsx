@@ -118,9 +118,9 @@ const Partners = () => {
   return (
     <div className="tabs p-6 md:p-12 container ">
       <div className={` ${styles.intro} p-4 md:py-8 md:px-6  `}>
-         <h1>
+         <h2>
             Our partners and collaborators
-         </h1>   
+         </h2>   
       </div>       
       <div ref={sliderRef} className={` mx-8 my-4 md:container keen-slider`}>
 

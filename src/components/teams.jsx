@@ -54,7 +54,7 @@ const Teams = () => {
                     <div 
                     key={index}
                     className={`  keen-slider__slide  ${styles.teamMember} `}>
-                        <Image className={` rounded-md ${styles.Teamimage} ${styles.numberSlide} `} cloudName="namiri" publicId={member.image} />
+                        <Image className={` rounded-md ${styles.Teamimage} ${styles.numberSlide} `} alt={member.name} cloudName="namiri" publicId={member.image} />
                         <div className={` ${styles.teamMemberInfo} py-5`}>
                             <p className='text-gray-3 py-2'>{member.position}</p>
                             <h4 className='text-green py-2'>{member.name}</h4>

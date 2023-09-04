@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image } from 'cloudinary-react';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 import { Layout, News, Team } from '../components'
 import styles from '../styles/about.module.scss'
 
@@ -9,6 +9,29 @@ import styles from '../styles/about.module.scss'
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Women in ADR Kenya: Empowering Through Expertise</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content="Women in ADR , Women in ADR Kenya , ADR Kenya , Empowering Women in ADR, Gender Equality, ADR Training, Women's Advocacy"/>
+        <meta name="description" content="WADR empowers women in ADR through training, mentorship, and advocacy, promoting ADR as the global dispute resolution choice." />
+        
+        {/* <!-- Social Media Meta Tags --> */}
+        <meta property="og:title" content="Women in ADR" />
+        <meta property="og:description" content="Women in Alternative Dispute Resolution" />
+        <meta property="og:image" content="https://res.cloudinary.com/namiri/image/upload/v1689582997/Group_1_1_wzakeg.png" />
+        <meta property="og:url" content="https://womeninadr.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Women In ADR" />
+        <meta name="twitter:description" content="WADR is dedicated to paving the way for women from diverse professional and cultural backgrounds to excel in the field of Alternative Dispute Resolution (ADR). We believe that by preparing and positioning women in ADR on both national and international platforms, we can create a more inclusive and dynamic field of dispute resolution" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/namiri/image/upload/v1689582997/Group_1_1_wzakeg.png" />
+
+
+      
+        
+        {/* Add more meta tags or other SEO elements as needed */}
+      </Helmet>
       <Layout>
           <main>
               <section className={`  bg-purple py-8`}>
@@ -77,7 +100,7 @@ const About = () => {
                         
                       </div>
                       <div className="image-1 border-l-8 border-yellow ">
-                        <Image className={` ${styles.Img1}  `} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689783442/Courtesy_Call_at_Njeri_Kariuki_s_zibwp6-min_ydrnkh-min_1_t7zyyl.jpg" />
+                        <Image className={` ${styles.Img1}  `} alt="women in adr" cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689783442/Courtesy_Call_at_Njeri_Kariuki_s_zibwp6-min_ydrnkh-min_1_t7zyyl.jpg" />
                       </div>
                   </div>
                 </div>
@@ -87,10 +110,10 @@ const About = () => {
                       <div className="md:grid grid-cols-2 gap-5 px-4 mt-6 items-center">
                         <div className="image-section md:grid grid-cols-2 gap-4">
                           <div className="image-1 border-l-2 border-yellow">
-                            <Image className={` ${styles.Img1} ${styles.ImgMT} `} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689164635/IDLO_WADR_Workshop_1_sjgn3a.jpg" />
+                            <Image className={` ${styles.Img1} ${styles.ImgMT} `} alt="women in adr" cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689164635/IDLO_WADR_Workshop_1_sjgn3a.jpg" />
                           </div>
                           <div className="image-1  border-l-2 border-yellow">
-                            <Image className={` ${styles.Img1}  `} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689242712/Africa_Nazarene_Mediation_Moot_svg9tk.jpg" />
+                            <Image className={` ${styles.Img1}  `} alt="women in adr" cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1689242712/Africa_Nazarene_Mediation_Moot_svg9tk.jpg" />
                           </div>
                         </div>
                         <div className={` ${styles.textSection} text-end px-3 py-6 md:py-3 hidden md:block`}>

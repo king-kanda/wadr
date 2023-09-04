@@ -18,7 +18,7 @@ const Navbar = () => {
          <nav className=" px-2 sm:px-6 py-2 bg-gray">
             <div className=" flex justify-between items-center">
                 <Link to="/" className="flex items-center">
-                    <img src='https://res.cloudinary.com/namiri/image/upload/v1689296105/logo_3_fxmage.png' alt="" className={` ${styles.logo} `}/>
+                    <img src='https://res.cloudinary.com/namiri/image/upload/v1689296105/logo_3_fxmage.png' alt="Women In ADR Logo" className={` ${styles.logo} `}/>
                 </Link>
                 <div className="md:hidden sm:block px-4">
                         <button 

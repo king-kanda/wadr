@@ -1,5 +1,15 @@
 .blogSection{
-    height: 50vh;
+    // height: 50vh;
+    background: linear-gradient(360deg, rgba(85, 25, 109, 0.795) 50%, rgba(2, 2, 2, 0.192) 100%),
+     url('https://res.cloudinary.com/namiri/image/upload/v1689098217/Women_s_Day_Event_1_1_ignoof.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     .title{
         display: flex;
         justify-content: flex-start;

@@ -50,11 +50,6 @@ export const teams = [
       position: 'Training Coordinator/ Membership ',
       image: 'https://res.cloudinary.com/namiri/image/upload/v1689101041/Phyllis_Wangwe_ujch18.jpg',
     },
-    {
-      name: 'Philomena Mbaye',
-      position: 'Administrative Assistant',
-      image: 'https://res.cloudinary.com/namiri/image/upload/v1689579530/Philomena_Mbaye_-_Admin_Assistant_2_e7aokb.jpg',
-    },
   ]
 
  

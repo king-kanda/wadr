@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from '../styles/home.module.scss';
 
 
@@ -27,15 +27,7 @@ const Accordion = () => {
     {
         title: 'Collaboration',
         content: 'We believe in the power of collaboration and strive to create a supportive network where women can connect, share insights, and learn from one another. By fostering a collaborative environment, we enhance the professional growth and success of our members.',
-      },
-    //   {
-    //     title: 'Certified projects',
-    //     content: 'All our featured afforestation, reforestation and conservation projects must be certified  to at least the highest standard in your country or region by an internationally recognised body. Certification is primarily about the carbon credits generated over time but other certifications regarding social and environmental benefits also add value.  ',
-    //   },
-    //   {
-    //     title: 'Certified projects',
-    //     content: 'All our featured afforestation, reforestation and conservation projects must be certified  to at least the highest standard in your country or region by an internationally recognised body. Certification is primarily about the carbon credits generated over time but other certifications regarding social and environmental benefits also add value.  ',
-    //   },
+    },
   ];
 
   return (

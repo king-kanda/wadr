@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import { Image } from 'cloudinary-react';
 import { Helmet } from 'react-helmet';
 import styles from '../styles/blogs.module.scss'
 import { Footer, Navbar } from '../components'
@@ -18,8 +17,7 @@ const Blog = () => {
     }, []);
 
     
-
-  return (
+    return (
     <>
     <Helmet>
         <title>Explore Our Latest ADR Blogs: Insights, News, and More</title>
@@ -59,7 +57,15 @@ const Blog = () => {
             <div className="container p-4 md:p-12 ">
                 <div className="md:grid grid-cols-3 gap-12">
 
-                  {blogs.map((blog) => (
+                { blogs.length <= 0 ? (<>
+                
+               <>
+                    <p className='text-xl w-full font-bold'>
+                        No Blogs have been fetched...
+                    </p>
+               </>
+                
+                </>) :  blogs.map((blog) => (
                     <div 
                     key={blog.id}
                     className={`  ${styles.newsCard} `}>

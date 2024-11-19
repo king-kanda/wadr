@@ -1,5 +1,5 @@
-import React , { useState , useEffect} from 'react'
-import {  Link, useParams  } from 'react-router-dom';
+import { useState , useEffect} from 'react'
+import { useParams  } from 'react-router-dom';
 import styles from '../styles/blogs.module.scss'
 import { Layout , News } from '../components'
 import { Image } from 'cloudinary-react';
